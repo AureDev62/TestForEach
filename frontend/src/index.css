@@ -1,0 +1,107 @@
+/* reset CSS */
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+  background-color: bisque;
+}
+
+/*------------------------------------------------------------- page Home ------------------------------------------------------------*/
+.containerHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes elevate {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-250px);
+    -webkit-transform: translateY(-250px);
+    -moz-transform: translateY(-250px);
+    -ms-transform: translateY(-250px);
+    -o-transform: translateY(-250px);
+}
+}
+
+
+.h1Home {
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards, elevate 1s ease-in-out 2s forwards;
+  -webkit-animation: fadeIn 1.5s ease-in forwards, elevate 1s ease-in-out 2s forwards;
+}
+
+.buttonHome{
+  opacity: 0;
+  animation: fadeIn 1.5s 2s forwards;
+  -webkit-animation: fadeIn 1.5s 2s ;
+  animation-fill-mode: forwards;
+}
+
+/*------------------------------------------ Button----------------------------- */
+
+.containerButton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.button{
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color:#51b1c1;
+  border: 1px solid ;
+}
+
+/* ------------------------------------------------HttpCode---------------------------- */
+
+.containerHttp{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.containerHttp p{
+  font-size: 20px;
+}
+
+/* -----------------------------------------lost -----------------------------------------*/
+
+.containerLost{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* ---------------------------------------------NotFound------------------------ */
+.notFoundH1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
